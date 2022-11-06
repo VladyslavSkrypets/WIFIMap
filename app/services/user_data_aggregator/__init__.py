@@ -1,0 +1,1 @@
+from app.services.user_data_aggregator.main import UserDataAggregator
