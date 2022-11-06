@@ -36,6 +36,4 @@ def index():
 
         return jsonify([data.dict() for data in users_data[:users_limit]])
     except Exception:
-        import traceback
-        print(traceback.format_exc())
         return jsonify({'exception': 'Error occurred during processing request'}, 400)
